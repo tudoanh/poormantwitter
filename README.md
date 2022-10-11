@@ -2,9 +2,7 @@
 
 Build with Django & VueJS
 
-<video width="" height="500" controls>
-  <source src="poormantwitter.mp4" type="video/mp4">
-</video>
+<img src="output.gif">
 
 ### Up and build
 
