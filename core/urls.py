@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from twitter.urls import urlpatterns as twitter_urls
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+] + twitter_urls
