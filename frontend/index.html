@@ -49,9 +49,16 @@
           <div class="tasks_list" style="margin-top: 40px">
             <div v-for="tweet in tweets" :key="tweet.id">
               <div class="card" style="margin-top: 30px">
-                <div class="card-body">
+                <div class="card-header">
                   <h4 class="card-title">{{ tweet.author }}</h4>
+                </div>
+                <div class="card-body">
                   <p>{{ tweet.content }}</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      Tweeted at <em>{{ tweet.created }}</em>
+                    </small>
+                  </p>
                 </div>
               </div>
             </div>
