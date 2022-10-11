@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  django:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: poorman_twitter
+    container_name: local_poorman_twitter
+    platform: linux/x86_64
+    volumes:
+      - .:/app:z
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    command: /start
+    privileged: true
