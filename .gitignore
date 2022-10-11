@@ -175,3 +175,5 @@ cython_debug/
 
 .env
 db.sqlite3
+db.sqlite3
+.env

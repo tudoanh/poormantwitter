@@ -19,5 +19,5 @@ from django.urls import path
 from twitter.urls import urlpatterns as twitter_urls
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
 ] + twitter_urls

@@ -4,7 +4,7 @@ from .api.views import TweetViewSet
 
 router = routers.DefaultRouter()
 
-router.register(r'tweets', TweetViewSet)
+router.register(r"tweets", TweetViewSet)
 
 
 urlpatterns = router.urls
